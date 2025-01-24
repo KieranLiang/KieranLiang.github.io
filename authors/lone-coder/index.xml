@@ -6,15 +6,8 @@
     <description>Recent content in Lone Coder on Kieran Liang</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://KieranLiang.github.io/authors/lone-coder/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Emoji Support</title>
-      <link>http://KieranLiang.github.io/posts/emoji-support/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://KieranLiang.github.io/posts/emoji-support/</guid>
-      <description>&lt;h1 id=&#34;emoji-can-be-enabled-in-a-hugo-project-in-a-number-of-ways&#34;&gt;&#xD;&#xA;  Emoji can be enabled in a Hugo project in a number of ways.&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#emoji-can-be-enabled-in-a-hugo-project-in-a-number-of-ways&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;</description>
-    </item>
     <item>
       <title>Markdown Syntax Guide</title>
       <link>http://KieranLiang.github.io/posts/markdown-syntax/</link>
