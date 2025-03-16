@@ -1,7 +1,9 @@
-# BlogBuild
-
-
 # 博客搭建
 
-Hugo + Github pages + Github action搭建个人博客
 
+# 常用的hugo命令
+
+创建一篇新文章
+```
+hugo new posts/xxx.md
+```
