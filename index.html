@@ -103,14 +103,46 @@
         title="./images/avatar.jpg" /></a></div><h1 class="home-title">Kieran Kaiyan Liang</h1><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/xxxx" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a><a href="https://www.zhihu.com/people/xxxx" title="知乎" target="_blank" rel="noopener noreffer me"><i data-svg-src="/lib/simple-icons/icons/zhihu.min.svg" aria-hidden="true"></i></a><a href="mailto:2823279730@qq.com" title="Email" rel="me"><i class="far fa-envelope fa-fw" aria-hidden="true"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/blogbuild/">博客搭建</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Kieran Liang</a></span>&nbsp;<span class="post-publish">published on <time datetime="2025-03-16">2025-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>博客相关文章</a></span></div><div class="content"><h1 id="常用的hugo命令">常用的hugo命令</h1>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Kieran Liang</a></span>&nbsp;<span class="post-publish">published on <time datetime="2025-03-16">2025-03-16</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>博客相关文章</a></span></div><div class="content"><h1 id="前言">前言</h1>
+<p>第一次搭建博客，仍有诸多不完善的地方</p>
+<h1 id="常用的hugo命令">常用的hugo命令</h1>
 <p>创建一篇新文章</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-">
+    <div class="code-header language-bash">
         <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
         <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new posts/xxx.md</span></span></code></pre></div></div></div><div class="post-footer">
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /d/hugo/KieranKaiyanLiang
+</span></span><span class="line"><span class="cl">hugo new posts/xxx.md</span></span></code></pre></div></div>
+<p>当编辑完文字后
+使用bash脚本一键部署</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 进入 Hugo 项目目录（注意 WSL 的路径格式）</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /d/hugo/KieranKaiyanLiang <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&#34;无法进入项目目录&#34;</span><span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 生成静态文件</span>
+</span></span><span class="line"><span class="cl">hugo <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&#34;Hugo 生成失败&#34;</span><span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 进入 public 目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> public <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&#34;无法进入 public 目录&#34;</span><span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Git 操作</span>
+</span></span><span class="line"><span class="cl">git add . <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 获取变更文件列表（最多显示前10个文件避免信息过长）</span>
+</span></span><span class="line"><span class="cl"><span class="nv">CHANGES</span><span class="o">=</span><span class="k">$(</span>git diff --cached --name-only <span class="p">|</span> head -n <span class="m">10</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 提交并推送（强制覆盖）</span>
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Update: </span><span class="nv">$CHANGES</span><span class="s2">...[其他变更省略]&#34;</span> <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">git push --force origin master <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;部署成功！&#34;</span></span></span></code></pre></div></div></div><div class="post-footer">
         <a href="/blogbuild/">Read More</a></div>
 </article></div></div>
             </main><footer class="footer">
