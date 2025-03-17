@@ -25,7 +25,6 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md当编辑完文字后 使用b
 常用的hugo命令 创建一篇新文章
 cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md当编辑完文字后 使用bash脚本一键部署
 #!/bin/bash # 进入 Hugo 项目目录（注意 WSL 的路径格式） cd /d/hugo/KieranKaiyanLiang || { echo &#34;无法进入项目目录&#34;; exit 1; } # 生成静态文件 hugo || { echo &#34;Hugo 生成失败&#34;; exit 1; } # 进入 public 目录 cd public || { echo &#34;无法进入 public 目录&#34;; exit 1; } # Git 操作 git add . || exit 1 # 提交并推送（强制覆盖） git commit -m &#34;Auto-update: $(date &#43;&#39;%Y-%m-%d %H:%M&#39;)&#34; git push --force || exit 1 echo &#34;部署成功！&#34; #否则终端会自动关闭看不清运行结果 read -p &#34;按回车关闭终端&#34;">
-      <meta name="twitter:site" content="@Kieran_Liang">
 <meta name="application-name" content="我的网站">
 <meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
