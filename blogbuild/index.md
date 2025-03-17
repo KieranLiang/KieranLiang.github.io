@@ -27,12 +27,9 @@ cd public || { echo "无法进入 public 目录"; exit 1; }
 # Git 操作
 git add . || exit 1
 
-# 获取变更文件列表（最多显示前10个文件避免信息过长）
-CHANGES=$(git diff --cached --name-only | head -n 10 | tr '\n' ' ')
-
 # 提交并推送（强制覆盖）
-git commit -m "Update: $CHANGES...[其他变更省略]" || exit 1
-git push --force origin master || exit 1
+git commit -m "Auto-update: $(date +'%Y-%m-%d %H:%M')"
+git push --force || exit 1
 
 echo "部署成功！"
 ```

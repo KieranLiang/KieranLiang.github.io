@@ -135,12 +135,9 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># Git 操作</span>
 </span></span><span class="line"><span class="cl">git add . <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 获取变更文件列表（最多显示前10个文件避免信息过长）</span>
-</span></span><span class="line"><span class="cl"><span class="nv">CHANGES</span><span class="o">=</span><span class="k">$(</span>git diff --cached --name-only <span class="p">|</span> head -n <span class="m">10</span> <span class="p">|</span> tr <span class="s1">&#39;\n&#39;</span> <span class="s1">&#39; &#39;</span><span class="k">)</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 提交并推送（强制覆盖）</span>
-</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Update: </span><span class="nv">$CHANGES</span><span class="s2">...[其他变更省略]&#34;</span> <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
-</span></span><span class="line"><span class="cl">git push --force origin master <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Auto-update: </span><span class="k">$(</span>date +<span class="s1">&#39;%Y-%m-%d %H:%M&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">git push --force <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;部署成功！&#34;</span></span></span></code></pre></div></div></div><div class="post-footer">
         <a href="/blogbuild/">Read More</a></div>
