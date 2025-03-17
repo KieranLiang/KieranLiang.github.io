@@ -32,4 +32,6 @@ git commit -m "Auto-update: $(date +'%Y-%m-%d %H:%M')"
 git push --force || exit 1
 
 echo "部署成功！"
+#否则终端会自动关闭看不清运行结果
+read -p "按回车关闭终端"  
 ```

@@ -46,7 +46,9 @@
 </span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Auto-update: </span><span class="k">$(</span>date +<span class="s1">&#39;%Y-%m-%d %H:%M&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">git push --force <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;部署成功！&#34;</span></span></span></code></pre></div></div>]]></description>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;部署成功！&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#否则终端会自动关闭看不清运行结果</span>
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> -p <span class="s2">&#34;按回车关闭终端&#34;</span>  </span></span></code></pre></div></div>]]></description>
 </item>
 </channel>
 </rss>
