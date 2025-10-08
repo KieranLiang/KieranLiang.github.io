@@ -1,17 +1,24 @@
 # 博客搭建
 
+
 # 前言
+
 第一次搭建博客，仍有诸多不完善的地方
 
 # 常用的hugo命令
 
 创建一篇新文章
+
 ```bash
 cd /d/hugo/KieranKaiyanLiang
 hugo new posts/xxx.md
 ```
+
+此时会在KieranKaiyanLiang/content/posts下创建xxx.md文档
+
 当编辑完文字后
-使用bash脚本一键部署
+运行脚本auto_deploy.sh一键部署
+
 ```bash
 #!/bin/bash
 
@@ -35,3 +42,4 @@ echo "部署成功！"
 #否则终端会自动关闭看不清运行结果
 read -p "按回车关闭终端"  
 ```
+

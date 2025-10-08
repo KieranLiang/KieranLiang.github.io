@@ -9,8 +9,7 @@
   <meta property="og:title" content="博客搭建">
   <meta property="og:description" content="前言 第一次搭建博客，仍有诸多不完善的地方
 常用的hugo命令 创建一篇新文章
-cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md当编辑完文字后 使用bash脚本一键部署
-#!/bin/bash # 进入 Hugo 项目目录（注意 WSL 的路径格式） cd /d/hugo/KieranKaiyanLiang || { echo &#34;无法进入项目目录&#34;; exit 1; } # 生成静态文件 hugo || { echo &#34;Hugo 生成失败&#34;; exit 1; } # 进入 public 目录 cd public || { echo &#34;无法进入 public 目录&#34;; exit 1; } # Git 操作 git add . || exit 1 # 提交并推送（强制覆盖） git commit -m &#34;Auto-update: $(date &#43;&#39;%Y-%m-%d %H:%M&#39;)&#34; git push --force || exit 1 echo &#34;部署成功！&#34; #否则终端会自动关闭看不清运行结果 read -p &#34;按回车关闭终端&#34;">
+cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang/content/posts下创建xxx.md文档">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -23,8 +22,7 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md当编辑完文字后 使用b
   <meta name="twitter:title" content="博客搭建">
   <meta name="twitter:description" content="前言 第一次搭建博客，仍有诸多不完善的地方
 常用的hugo命令 创建一篇新文章
-cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md当编辑完文字后 使用bash脚本一键部署
-#!/bin/bash # 进入 Hugo 项目目录（注意 WSL 的路径格式） cd /d/hugo/KieranKaiyanLiang || { echo &#34;无法进入项目目录&#34;; exit 1; } # 生成静态文件 hugo || { echo &#34;Hugo 生成失败&#34;; exit 1; } # 进入 public 目录 cd public || { echo &#34;无法进入 public 目录&#34;; exit 1; } # Git 操作 git add . || exit 1 # 提交并推送（强制覆盖） git commit -m &#34;Auto-update: $(date &#43;&#39;%Y-%m-%d %H:%M&#39;)&#34; git push --force || exit 1 echo &#34;部署成功！&#34; #否则终端会自动关闭看不清运行结果 read -p &#34;按回车关闭终端&#34;">
+cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang/content/posts下创建xxx.md文档">
 <meta name="application-name" content="我的网站">
 <meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,7 +37,7 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md当编辑完文字后 使用b
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/blogbuild\/"
-        },"genre": "posts","wordcount":  250 ,
+        },"genre": "posts","wordcount":  306 ,
         "url": "\/blogbuild\/","datePublished": "2025-03-16T21:33:37+08:00","dateModified": "2025-03-17T01:24:38+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -113,7 +111,7 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md当编辑完文字后 使用b
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">博客搭建</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Kieran Liang</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>博客相关文章</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-03-16">2025-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;250 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-03-16">2025-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;306 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -132,8 +130,9 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md当编辑完文字后 使用b
         <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /d/hugo/KieranKaiyanLiang
 </span></span><span class="line"><span class="cl">hugo new posts/xxx.md</span></span></code></pre></div></div>
+<p>此时会在KieranKaiyanLiang/content/posts下创建xxx.md文档</p>
 <p>当编辑完文字后
-使用bash脚本一键部署</p>
+运行脚本auto_deploy.sh一键部署</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-bash">
         <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>

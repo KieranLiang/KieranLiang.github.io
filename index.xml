@@ -23,34 +23,7 @@
         <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /d/hugo/KieranKaiyanLiang
 </span></span><span class="line"><span class="cl">hugo new posts/xxx.md</span></span></code></pre></div></div>
-<p>当编辑完文字后
-使用bash脚本一键部署</p>
-<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
-    <div class="code-header language-bash">
-        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
-        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
-        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
-    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 进入 Hugo 项目目录（注意 WSL 的路径格式）</span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /d/hugo/KieranKaiyanLiang <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&#34;无法进入项目目录&#34;</span><span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 生成静态文件</span>
-</span></span><span class="line"><span class="cl">hugo <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&#34;Hugo 生成失败&#34;</span><span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 进入 public 目录</span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> public <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&#34;无法进入 public 目录&#34;</span><span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Git 操作</span>
-</span></span><span class="line"><span class="cl">git add . <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 提交并推送（强制覆盖）</span>
-</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Auto-update: </span><span class="k">$(</span>date +<span class="s1">&#39;%Y-%m-%d %H:%M&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">git push --force <span class="o">||</span> <span class="nb">exit</span> <span class="m">1</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;部署成功！&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#否则终端会自动关闭看不清运行结果</span>
-</span></span><span class="line"><span class="cl"><span class="nb">read</span> -p <span class="s2">&#34;按回车关闭终端&#34;</span>  </span></span></code></pre></div></div>]]></description>
+<p>此时会在KieranKaiyanLiang/content/posts下创建xxx.md文档</p>]]></description>
 </item>
 </channel>
 </rss>
