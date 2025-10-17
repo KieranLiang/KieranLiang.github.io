@@ -8,7 +8,7 @@
   <meta property="og:site_name" content="Kieran Liang&#39;s Blog">
   <meta property="og:title" content="博客搭建">
   <meta property="og:description" content="前言 第一次搭建博客，仍有诸多不完善的地方
-常用的hugo命令 创建一篇新文章
+快速开始 创建一篇新文章
 cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang/content/posts下创建xxx.md文档">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -21,7 +21,7 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang
   <meta name="twitter:image" content="/images/Kieran_Liang%27s_Blog.png">
   <meta name="twitter:title" content="博客搭建">
   <meta name="twitter:description" content="前言 第一次搭建博客，仍有诸多不完善的地方
-常用的hugo命令 创建一篇新文章
+快速开始 创建一篇新文章
 cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang/content/posts下创建xxx.md文档">
 <meta name="application-name" content="我的网站">
 <meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -37,7 +37,7 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/blogbuild\/"
-        },"genre": "posts","wordcount":  306 ,
+        },"genre": "posts","wordcount":  531 ,
         "url": "\/blogbuild\/","datePublished": "2025-03-16T21:33:37+08:00","dateModified": "2025-03-17T01:24:38+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -111,8 +111,8 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">博客搭建</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Kieran Liang</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>博客相关文章</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-03-16">2025-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;306 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-03-16">2025-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;531 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -121,7 +121,7 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
             </div><div class="content" id="content"><h1 id="前言">前言</h1>
 <p>第一次搭建博客，仍有诸多不完善的地方</p>
-<h1 id="常用的hugo命令">常用的hugo命令</h1>
+<h1 id="快速开始">快速开始</h1>
 <p>创建一篇新文章</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-bash">
@@ -131,8 +131,7 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /d/hugo/KieranKaiyanLiang
 </span></span><span class="line"><span class="cl">hugo new posts/xxx.md</span></span></code></pre></div></div>
 <p>此时会在KieranKaiyanLiang/content/posts下创建xxx.md文档</p>
-<p>当编辑完文字后
-运行脚本auto_deploy.sh一键部署</p>
+<p>当编辑完文字后，运行脚本auto_deploy.sh一键部署</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-bash">
         <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
@@ -159,6 +158,91 @@ cd /d/hugo/KieranKaiyanLiang hugo new posts/xxx.md此时会在KieranKaiyanLiang
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;部署成功！&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#否则终端会自动关闭看不清运行结果</span>
 </span></span><span class="line"><span class="cl"><span class="nb">read</span> -p <span class="s2">&#34;按回车关闭终端&#34;</span>  </span></span></code></pre></div></div>
+<h1 id="新建文章">新建文章</h1>
+<p>hugo new posts/xxx.md命令能够根据archetypes/default.md中的配置初始化md文档</p>
+<p>主要就是初始化文章的Front Matter</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://gitee.com/kieranliang/typora-image/raw/master/typora/2025-10-18/57db1dd85b4b69a06cfd6328a53774ed.png"
+        data-srcset="https://gitee.com/kieranliang/typora-image/raw/master/typora/2025-10-18/57db1dd85b4b69a06cfd6328a53774ed.png, https://gitee.com/kieranliang/typora-image/raw/master/typora/2025-10-18/57db1dd85b4b69a06cfd6328a53774ed.png 1.5x, https://gitee.com/kieranliang/typora-image/raw/master/typora/2025-10-18/57db1dd85b4b69a06cfd6328a53774ed.png 2x"
+        data-sizes="auto"
+        alt="https://gitee.com/kieranliang/typora-image/raw/master/typora/2025-10-18/57db1dd85b4b69a06cfd6328a53774ed.png"
+        title="image-20251018045828856" /></p>
+<p>Front Matter还可以设置下列选项：</p>
+<table>
+  <thead>
+      <tr>
+          <th>字段</th>
+          <th>作用</th>
+          <th>示例</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>title</code></td>
+          <td>文章标题</td>
+          <td><code>{{ replace .File.ContentBaseName &quot;-&quot; &quot; &quot; | title }}</code></td>
+      </tr>
+      <tr>
+          <td><code>date</code></td>
+          <td>发布时间</td>
+          <td><code>date: {{ .Date }}</code></td>
+      </tr>
+      <tr>
+          <td><code>draft</code></td>
+          <td>是否草稿</td>
+          <td><code>draft: true</code></td>
+      </tr>
+      <tr>
+          <td><code>slug</code></td>
+          <td>URL 别名</td>
+          <td><code>slug: my-first-post</code></td>
+      </tr>
+      <tr>
+          <td><code>url</code></td>
+          <td>页面完整 URL</td>
+          <td><code>url: /posts/my-first-post/</code></td>
+      </tr>
+      <tr>
+          <td><code>description</code></td>
+          <td>摘要</td>
+          <td><code>description: &quot;文章摘要&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>categories</code></td>
+          <td>分类</td>
+          <td><code>categories: [&quot;Tech&quot;, &quot;Hugo&quot;]</code></td>
+      </tr>
+      <tr>
+          <td><code>tags</code></td>
+          <td>标签</td>
+          <td><code>tags: [&quot;hugo&quot;, &quot;markdown&quot;]</code></td>
+      </tr>
+      <tr>
+          <td><code>author</code></td>
+          <td>作者</td>
+          <td><code>author: &quot;Kieran&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>featured_image</code></td>
+          <td>封面图</td>
+          <td><code>featured_image: &quot;/images/post-cover.jpg&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>layout</code></td>
+          <td>使用模板</td>
+          <td><code>layout: post</code></td>
+      </tr>
+      <tr>
+          <td><code>publishDate</code></td>
+          <td>实际发布时间</td>
+          <td><code>publishDate: 2025-10-18</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>但其实直接在content/posts下手动创建md文档也可以</p>
+<h1 id="heading"></h1>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

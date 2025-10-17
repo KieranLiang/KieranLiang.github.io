@@ -12,7 +12,7 @@
     <guid>/blogbuild/</guid>
     <description><![CDATA[<h1 id="前言">前言</h1>
 <p>第一次搭建博客，仍有诸多不完善的地方</p>
-<h1 id="常用的hugo命令">常用的hugo命令</h1>
+<h1 id="快速开始">快速开始</h1>
 <p>创建一篇新文章</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-bash">

@@ -4,7 +4,7 @@
         <link>/</link>
         <description>这是我的全新 Hugo 网站</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>2823279730@qq.com (Kieran Liang)</managingEditor>
-            <webMaster>2823279730@qq.com (Kieran Liang)</webMaster><lastBuildDate>Sun, 16 Mar 2025 21:33:37 &#43;0800</lastBuildDate>
+            <webMaster>2823279730@qq.com (Kieran Liang)</webMaster><lastBuildDate>Sat, 18 Oct 2025 03:45:21 &#43;0800</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>博客搭建</title>
@@ -14,7 +14,7 @@
     <guid>/blogbuild/</guid>
     <description><![CDATA[<h1 id="前言">前言</h1>
 <p>第一次搭建博客，仍有诸多不完善的地方</p>
-<h1 id="常用的hugo命令">常用的hugo命令</h1>
+<h1 id="快速开始">快速开始</h1>
 <p>创建一篇新文章</p>
 <div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
     <div class="code-header language-bash">
