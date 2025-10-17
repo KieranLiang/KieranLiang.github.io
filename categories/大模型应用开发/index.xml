@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>大模型应用开发 - Category - Kieran Liang&#39;s Blog</title>
+        <link>//localhost:1313/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/</link>
+        <description>大模型应用开发 - Category - Kieran Liang&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>2823279730@qq.com (Kieran Liang)</managingEditor>
+            <webMaster>2823279730@qq.com (Kieran Liang)</webMaster><lastBuildDate>Thu, 16 Oct 2025 01:56:45 &#43;0800</lastBuildDate><atom:link href="//localhost:1313/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/" rel="self" type="application/rss+xml" /><item>
+    <title>Qwen3本地部署</title>
+    <link>//localhost:1313/qwen3deploy/</link>
+    <pubDate>Thu, 16 Oct 2025 01:56:45 &#43;0800</pubDate>
+    <author>Kieran Liang</author>
+    <guid>//localhost:1313/qwen3deploy/</guid>
+    <description><![CDATA[<p>参考：https://github.com/datawhalechina/self-llm/blob/master/models/Qwen3/02-Qwen3-8B-vLLM%20%E9%83%A8%E7%BD%B2%E8%B0%83%E7%94%A8.md</p>]]></description>
+</item>
+<item>
+    <title>大模型部署</title>
+    <link>//localhost:1313/llmdeployment/</link>
+    <pubDate>Wed, 08 Oct 2025 14:24:50 &#43;0800</pubDate>
+    <author>Kieran Liang</author>
+    <guid>//localhost:1313/llmdeployment/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

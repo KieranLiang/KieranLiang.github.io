@@ -10,8 +10,8 @@
 创建一篇新文章
 
 ```bash
-cd /d/hugo/KieranKaiyanLiang
-hugo new posts/xxx.md
+cd /d/hugo/KieranKaiyanLiang # 进入Hugo项目的根目录
+hugo new posts/xxx.md # 在content/posts下新建md文档
 ```
 
 此时会在KieranKaiyanLiang/content/posts下创建xxx.md文档
@@ -47,7 +47,14 @@ hugo new posts/xxx.md命令能够根据archetypes/default.md中的配置初始�
 
 主要就是初始化文章的Front Matter
 
-![image-20251018045828856](https://gitee.com/kieranliang/typora-image/raw/master/typora/2025-10-18/57db1dd85b4b69a06cfd6328a53774ed.png)
+```toml
++++
+date = '2025-03-16T21:33:37+08:00'
+draft = false
+title = '博客搭建'
+categories = ['博客相关文章']
++++
+```
 
 Front Matter还可以设置下列选项：
 | 字段               | 作用       | 示例                                         |
@@ -68,4 +75,17 @@ Front Matter还可以设置下列选项：
 
 但其实直接在content/posts下手动创建md文档也可以
 
-# 
+# 本地预览
+
+如果想在本地预览修改后的博客
+
+```bash
+cd /d/hugo/KieranKaiyanLiang
+hugo server -D # 启动本地服务器
+```
+
+-D表示会编译包括draft在内的所有文档
+
+此时会显示监听的端口号（如http://localhost:1313/）
+
+在浏览器中访问http://localhost:1313/ 即可
